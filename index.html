@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+ 
+	<head>
+		<meta charset="utf-8" />
+		<title>Benchmark3</title>
+
+		<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+			var config = {
+				apiKey: "AIzaSyD478edFl5GxMXiPOTyVZPYYpDowHWHAuM",
+				authDomain: "defense-and-attack.firebaseapp.com",
+				databaseURL: "https://defense-and-attack.firebaseio.com",
+				projectId: "defense-and-attack",
+				storageBucket: "defense-and-attack.appspot.com",
+				messagingSenderId: "446661123245"
+			};
+		  	firebase.initializeApp(config);
+		</script>
+		
+		<script type="text/javascript" src="js/phaser.js"></script>	
+		<script type="text/javascript" src="js/game/button.js"></script>	
+		<script type="text/javascript" src="js/game/creep.js"></script>
+		<script type="text/javascript" src="js/game/building.js"></script>
+		<script type="text/javascript" src="js/game/game.js"></script>	
+		<script type="text/javascript" src="js/game/playerdata.js"></script>	
+		<script type="text/javascript" src="js/simplepeer.min.js"></script>
+		<script type="text/javascript" src="js/scenes/SplashScene.js"></script>
+		<script type="text/javascript" src="js/scenes/MainMenuScene.js"></script>
+		<script type="text/javascript" src="js/scenes/MatchScene.js"></script>
+		<script type="text/javascript" src="js/scenes/PlayScene.js"></script>
+		<script type="text/javascript" src="js/scenes/HelpScene.js"></script>
+		<script type="text/javascript" src="js/scenes/AboutScene.js"></script>
+		<script type="text/javascript" src="js/scenes/PauseScene.js"></script>
+
+		<script type="text/javascript" src="js/ai/PathFinder.js"></script>
+		<script type="text/javascript" src="js/ai/MinHeap.js"></script>
+
+		<script type="text/javascript" src="js/TopDownGame.js"></script>
+		
+		<style>
+	  body {
+	    padding: 0px;
+	    margin: 0px;
+	  }
+	  </style>
+	</head>
+ 
+	<body>  
+		<!-- include the main game file -->
+		<script src="js/main.js"></script>
+	</body>
+</html>
